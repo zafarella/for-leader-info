@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs 
+title="Мотивационная памятка лидера" 
+description="Каждый день помогает достичь цель.
+Ставьте оценки и оставляйте комментарии — ваше мнение важно!" 
+author="Данил Антонов" 
+author_email="danil.antonov@gmail.com" 
+author_location="http://eco-krug.ru/"
+author_link="http://world-goals.info/"
+title_url="http://for-leader.info/"
+author_affiliation="AIESEC alumni"
+category="lifestyle"
+category2="finance"
+author_photo="http://for-leader.info/igoogle/userpic.jpg" 
+screenshot="http://for-leader.info/igoogle/leadership_motivation_ru_screenshot.png" 
+thumbnail="http://for-leader.info/igoogle/leadership_motivation_ru_thumbnail.png">
+<Require feature="dynamic-height" /> 
+</ModulePrefs>
+<UserPref datatype="string" name="s3" display_name="Стиль CSS" default_value="font-family: sans-serif; font-weight: bold;" />
+<UserPref datatype="string" name="bg" display_name="Цвет фона" default_value="ffcc00" />
+<Content type="html">
+<![CDATA[ 
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache" /><meta HTTP-EQUIV="Expires" CONTENT="Mon, 22 Aug 1978 23:59:59 GMT" />
+<style type="text/css">
+a:link, a:visited { color: 444444; text-decoration: none; }
+.innerbox {padding:0em;}
+.r1, .r2, .r3, .r5 {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	font-size:1px; }
+.r5 { margin: 0 5px; }
+.r3 { margin: 0 3px; }
+.r2 { margin: 0 2px; }
+.r1 { margin: 0 1px; }
+#outbox { margin:0em; }
+#outbox .innerbox { padding: 0.1em 0.3em; }
+
+.unselectable {
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.unselectable::selection { color: inherit }
+</style>
+
+<script type="text/javascript">
+var prefs = new gadgets.Prefs();
+
+function NoNet() {
+	document.getElementById('leader').innerHTML = "Нет связи с сервером. Проверьте подключение к сети.";
+	gadgets.window.adjustHeight();
+	setTimeout("GetMyText();",7500);
+};
+
+function GetMyText() {    
+	if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
+	menu.style.display='none';
+	var params = {};  
+	params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+	var url = "http://for-leader.info/db_quote_only.php";
+	var ts = new Date().getTime();
+	url = [ url, "?", ts ].join("");  
+	gadgets.io.makeRequest(url, response, params);
+	gadgets.window.adjustHeight();
+};
+function response(obj) {  
+
+	if (obj.text == '') NoNet(); else {
+		document.getElementById('leader').innerHTML = obj.text;
+		loading.style.display='none';
+		if (leader.innerHTML == 'undefined') NoNet();
+		gadgets.window.adjustHeight();
+	};
+};
+gadgets.util.registerOnLoadHandler(GetMyText);
+
+document.write('<style type="text/css">.innerbox, b { background-color: ' + prefs.getString("bg") + '; }</style>');
+
+function showMenu() { if (loading.style.display == 'none') menu.style.display='block'; };
+function hideMenu() { if (loading.style.display == 'none') menu.style.display='none';  };
+
+document.write('<div id="outbox" onmouseover="showMenu();" onmouseout="hideMenu();" style="position: z-index: 1; outline-style: none;"><b class="r5"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b><b class="r1"></b><div class="innerbox" id="leader" style="' + prefs.getString("s3") + '">Загрузка...</div><b class="r1"></b><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r5"></b></div>');
+
+document.write('<div onmouseover="showMenu();" onmouseout="hideMenu();" style="position: absolute; z-index: 2; top: 0px; right: 0px; display: none; padding: 2px;" id="menu" class="unselectable" unselectable="on"><a href="#" onClick="GetMyText();" style="color: ' + prefs.getString("bg") + '; background-color: 333333; font-size: x-small; font-weight: bold; padding: 2px;" class="unselectable" unselectable="on">Еще фразу?</a></div>');
+
+document.write('<div id="loading" style="position: absolute; z-index: 3; top: 0px; right: 0px; display: none; color: ' + prefs.getString("bg") + '; background-color: 333333; padding: 2px; font-size: x-small; font-weight: bold; opacity: 0.33; filter: alpha(opacity=33);" class="unselectable" unselectable="on">Загрузка...</div>');
+
+setTimeout("GetMyText();",36000000);
+</script>
+
+]]></Content></Module>
