@@ -51,7 +51,7 @@ user-select: none;
 var prefs = new gadgets.Prefs();
 
 function NoNet() {
-	document.getElementById('leader').innerHTML = "Нет связи с сервером. Проверьте подключение к сети.";
+	document.getElementById('leader').innerHTML = "Сервер временно не доступен.";
 	gadgets.window.adjustHeight();
 	setTimeout("GetMyText();",7500);
 };
