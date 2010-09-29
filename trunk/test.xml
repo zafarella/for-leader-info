@@ -3,12 +3,12 @@
   <ModulePrefs title="test" />
   <Content type="html">
     <![CDATA[
-
+hello 
 <script type="text/javascript">
 document.write(gadgets.io.getProxyUrl(http://for-leader.info/dbig.php));
 </script>
 
-
+world nnn
     ]]>
   </Content>
 </Module>
