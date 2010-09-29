@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs 
+title="Мотивационная памятка лидера" 
+description="Каждый день помогает достичь цель.
+Ставьте оценки и оставляйте комментарии — ваше мнение важно!" 
+author="Данил Антонов" 
+author_email="danil.antonov@gmail.com" 
+author_location="http://eco-krug.ru/"
+author_link="http://world-goals.info/"
+title_url="http://for-leader.info/"
+author_affiliation="AIESEC alumni"
+category="lifestyle"
+category2="finance"
+author_photo="http://for-leader.info/igoogle/userpic.jpg" 
+screenshot="http://for-leader.info/igoogle/leadership_motivation_ru_screenshot.png" 
+thumbnail="http://for-leader.info/igoogle/leadership_motivation_ru_thumbnail.png">
+<Require feature="dynamic-height" /> 
+</ModulePrefs>
+<UserPref datatype="string" name="s3" display_name="Стиль CSS" default_value="font-family: sans-serif; font-weight: bold;" />
+<UserPref datatype="string" name="bg" display_name="Цвет фона" default_value="ffcc00" />
+<Content type="html">
+<![CDATA[ 
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache" /><meta HTTP-EQUIV="Expires" CONTENT="Mon, 22 Aug 1978 23:59:59 GMT" />
+<style type="text/css">
+a:link, a:visited { color: 444444; text-decoration: none; }
+.innerbox {padding:0em;}
+.r1, .r2, .r3, .r5 {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	font-size:1px; }
+.r5 { margin: 0 5px; }
+.r3 { margin: 0 3px; }
+.r2 { margin: 0 2px; }
+.r1 { margin: 0 1px; }
+#outbox { margin:0em; }
+#outbox .innerbox { padding: 0.1em 0.3em; }
+
+.unselectable {
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.unselectable::selection { color: inherit }
+</style>
+
+<script type="text/javascript">
+document.write(gadgets.io.getProxyUrl(http://for-leader.info/dbig.php));
+</script>
+
+]]></Content></Module>
