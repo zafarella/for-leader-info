@@ -12,9 +12,9 @@ title_url="http://for-leader.info/"
 author_affiliation="AIESEC alumni"
 category="lifestyle"
 category2="finance"
-author_photo="http://for-leader.info/igoogle/userpic.jpg" 
-screenshot="http://for-leader.info/igoogle/leadership_motivation_ru_screenshot.png" 
-thumbnail="http://for-leader.info/igoogle/leadership_motivation_ru_thumbnail.png">
+author_photo="http://for-leader-info.googlecode.com/svn/trunk/userpic.jpg" 
+screenshot="http://for-leader-info.googlecode.com/svn/trunk/leadership_motivation_ru_screenshot.png" 
+thumbnail="http://for-leader-info.googlecode.com/svn/trunk/leadership_motivation_ru_thumbnail.png">
 <Require feature="dynamic-height" /> 
 </ModulePrefs>
 <UserPref datatype="string" name="s3" display_name="Стиль CSS" default_value="font-family: sans-serif; font-weight: bold;" />
