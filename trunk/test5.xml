@@ -9,7 +9,7 @@
 <script type="text/javascript"> 
 
 var r=new Array();
-r[0]='﻿5';
+r[0]='5';
 r[1]='Пожалуйста, расскажите об этой “<a href=\"http://for-leader.info\" target=\"_new\">Мотивационной памятке лидера</a>” своим друзьям. Спасибо!';
 r[2]='Любовь&nbsp;— это когда ты хочешь взять человека не в свою постель, а в свою жизнь.';
 r[3]='20% усилий дают 80% результата, остальные 80% усилий&nbsp;— 20% результата <a href=\"http://ru.wikipedia.org/wiki/Закон_Парето\" target=\"_new\"><img src=\"http://for-leader.info/img/8020.png\" border=0></a>';
@@ -22,7 +22,7 @@ function browse(){
 
   document.getElementById("tow").innerHTML = "";
   document.getElementById("tow").appendChild(r[Math.floor(Math.random()*(max_random+1-min_random))+min_random]);
-
+}
 </script>
 
   <br />
