@@ -46,14 +46,21 @@ user-select: none;
 .unselectable::selection { color: inherit }
 </style>
 
-<script type="text/javascript" src="db.js"></script>
 <script type="text/javascript">
+
+var r=new Array();
+r[0]='5';
+r[1]='Пожалуйста, расскажите об этой “<a href=\"http://for-leader.info\" target=\"_new\">Мотивационной памятке лидера</a>” своим друзьям. Спасибо!';
+r[2]='Любовь&nbsp;— это когда ты хочешь взять человека не в свою постель, а в свою жизнь.';
+r[3]='20% усилий дают 80% результата, остальные 80% усилий&nbsp;— 20% результата <a href=\"http://ru.wikipedia.org/wiki/Закон_Парето\" target=\"_new\"><img src=\"http://for-leader.info/img/8020.png\" border=0></a>';
+r[4]='<img src=\"http://for-leader.info/img/001.jpg\" border=0>';
+
+
 var prefs = new gadgets.Prefs();
 
 function GetMyText() {
 if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
-document.getElementById('leader').innerHTML=r[3];
-//r[Math.floor(Math.random()*(r[0]-1))+1];
+document.getElementById('leader').innerHTML=r[Math.floor(Math.random()*(r[0]-1))+1];
 menu.style.display='none';
 gadgets.window.adjustHeight();
 }
