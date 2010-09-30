@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="test" />
+  <Content type="html">
+    <![CDATA[
+
+kkk 
+<script type="text/javascript">
+//var ar = gadgets.io.getProxyUrl("http://for-leader.info/dbig.php");
+document.write(gadgets.io.getProxyUrl("http://for-leader.info/dbig.php"));
+</script>
+
+world nnn
+    ]]>
+  </Content>
+</Module>
