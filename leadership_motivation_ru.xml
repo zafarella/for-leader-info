@@ -48,42 +48,44 @@ user-select: none;
 
 <script type="text/javascript">
 
+//start db
+
 var r=new Array();
 r[0]='﻿397';
 r[1]='Пожалуйста, расскажите об этой “<a href=\"http://for-leader.info\" target=\"_new\">Мотивационной памятке лидера</a>” своим друзьям. Спасибо!';
 r[2]='Любовь&nbsp;— это когда ты хочешь взять человека не в свою постель, а в свою жизнь.';
 r[3]='20% усилий дают 80% результата, остальные 80% усилий&nbsp;— 20% результата <a href=\"http://ru.wikipedia.org/wiki/Закон_Парето\" target=\"_new\"><img src=\"http://for-leader.info/img/8020.png\" border=0></a>';
-r[4]='<img src=\"http://for-leader.info/img/001.jpg\" border=0>';
-r[5]='<img src=\"http://for-leader.info/img/002.jpg\" border=0>';
-r[6]='<img src=\"http://for-leader.info/img/003.jpg\" border=0>';
-r[7]='<img src=\"http://for-leader.info/img/004.jpg\" border=0>';
-r[8]='<img src=\"http://for-leader.info/img/005.jpg\" border=0>';
-r[9]='<img src=\"http://for-leader.info/img/006.jpg\" border=0>';
-r[10]='<img src=\"http://for-leader.info/img/007.jpg\" border=0>';
-r[11]='<img src=\"http://for-leader.info/img/008.jpg\" border=0>';
-r[12]='<img src=\"http://for-leader.info/img/009.jpg\" border=0>';
-r[13]='<img src=\"http://for-leader.info/img/010.jpg\" border=0>';
-r[14]='<img src=\"http://for-leader.info/img/011.jpg\" border=0>';
-r[15]='<img src=\"http://for-leader.info/img/012.jpg\" border=0>';
-r[16]='<img src=\"http://for-leader.info/img/013.jpg\" border=0>';
-r[17]='<img src=\"http://for-leader.info/img/014.jpg\" border=0>';
-r[18]='<img src=\"http://for-leader.info/img/015.jpg\" border=0>';
-r[19]='<img src=\"http://for-leader.info/img/016.jpg\" border=0>';
-r[20]='<img src=\"http://for-leader.info/img/017.jpg\" border=0>';
-r[21]='<img src=\"http://for-leader.info/img/018.jpg\" border=0>';
-r[22]='<img src=\"http://for-leader.info/img/019.jpg\" border=0>';
-r[23]='<img src=\"http://for-leader.info/img/020.jpg\" border=0>';
-r[24]='<img src=\"http://for-leader.info/img/021.jpg\" border=0>';
-r[25]='<img src=\"http://for-leader.info/img/022.jpg\" border=0>';
-r[26]='<img src=\"http://for-leader.info/img/023.jpg\" border=0>';
-r[27]='<img src=\"http://for-leader.info/img/024.jpg\" border=0>';
-r[28]='<img src=\"http://for-leader.info/img/025.jpg\" border=0>';
-r[29]='<img src=\"http://for-leader.info/img/026.jpg\" border=0>';
-r[30]='<img src=\"http://for-leader.info/img/027.jpg\" border=0>';
-r[31]='<img src=\"http://for-leader.info/img/028.jpg\" border=0>';
-r[32]='<img src=\"http://for-leader.info/img/029.jpg\" border=0>';
-r[33]='<img src=\"http://for-leader.info/img/030.jpg\" border=0>';
-r[34]='<img src=\"http://for-leader.info/img/031.jpg\" border=0>';
+r[4]='<img src=\"http://for-leader.info/img/001.jpg\" border=0 height=240 width=490>';
+r[5]='<img src=\"http://for-leader.info/img/002.jpg\" border=0 height=240 width=490>';
+r[6]='<img src=\"http://for-leader.info/img/003.jpg\" border=0 height=240 width=490>';
+r[7]='<img src=\"http://for-leader.info/img/004.jpg\" border=0 height=240 width=490>';
+r[8]='<img src=\"http://for-leader.info/img/005.jpg\" border=0 height=240 width=490>';
+r[9]='<img src=\"http://for-leader.info/img/006.jpg\" border=0 height=240 width=490>';
+r[10]='<img src=\"http://for-leader.info/img/007.jpg\" border=0 height=240 width=490>';
+r[11]='<img src=\"http://for-leader.info/img/008.jpg\" border=0 height=240 width=490>';
+r[12]='<img src=\"http://for-leader.info/img/009.jpg\" border=0 height=240 width=490>';
+r[13]='<img src=\"http://for-leader.info/img/010.jpg\" border=0 height=240 width=490>';
+r[14]='<img src=\"http://for-leader.info/img/011.jpg\" border=0 height=240 width=490>';
+r[15]='<img src=\"http://for-leader.info/img/012.jpg\" border=0 height=240 width=490>';
+r[16]='<img src=\"http://for-leader.info/img/013.jpg\" border=0 height=240 width=490>';
+r[17]='<img src=\"http://for-leader.info/img/014.jpg\" border=0 height=240 width=490>';
+r[18]='<img src=\"http://for-leader.info/img/015.jpg\" border=0 height=240 width=490>';
+r[19]='<img src=\"http://for-leader.info/img/016.jpg\" border=0 height=240 width=490>';
+r[20]='<img src=\"http://for-leader.info/img/017.jpg\" border=0 height=240 width=490>';
+r[21]='<img src=\"http://for-leader.info/img/018.jpg\" border=0 height=240 width=490>';
+r[22]='<img src=\"http://for-leader.info/img/019.jpg\" border=0 height=240 width=490>';
+r[23]='<img src=\"http://for-leader.info/img/020.jpg\" border=0 height=240 width=490>';
+r[24]='<img src=\"http://for-leader.info/img/021.jpg\" border=0 height=240 width=490>';
+r[25]='<img src=\"http://for-leader.info/img/022.jpg\" border=0 height=240 width=490>';
+r[26]='<img src=\"http://for-leader.info/img/023.jpg\" border=0 height=240 width=490>';
+r[27]='<img src=\"http://for-leader.info/img/024.jpg\" border=0 height=240 width=490>';
+r[28]='<img src=\"http://for-leader.info/img/025.jpg\" border=0 height=240 width=490>';
+r[29]='<img src=\"http://for-leader.info/img/026.jpg\" border=0 height=240 width=490>';
+r[30]='<img src=\"http://for-leader.info/img/027.jpg\" border=0 height=240 width=490>';
+r[31]='<img src=\"http://for-leader.info/img/028.jpg\" border=0 height=240 width=490>';
+r[32]='<img src=\"http://for-leader.info/img/029.jpg\" border=0 height=240 width=490>';
+r[33]='<img src=\"http://for-leader.info/img/030.jpg\" border=0 height=240 width=490>';
+r[34]='<img src=\"http://for-leader.info/img/031.jpg\" border=0 height=240 width=490>';
 r[35]='Если ты видишь проблему, это твоя проблема. Если ты думаешь, кто-то должен что-то с ней сделать, помни, что ты такой же кто-то, как и все остальные.';
 r[36]='Оставь место, которое ты использовал, чище, чем оно было до тебя.';
 r[37]='Дискуссия&nbsp;— это обмен знаниями, спор&nbsp;— обмен эмоциями.';
@@ -446,6 +448,8 @@ r[393]='Заставьте людей поверить в себя, постав
 r[394]='Не бойтесь ничего. Того, кто боится, преследуют неудачи.';
 r[395]='Неудача&nbsp;— это только возможность начать все делать более умно.';
 r[396]='Примите решение на всю жизнь стать учеником. Вы будете поражены тем, какой эффект это окажет на вашу карьеру.';
+
+//end db
 
 var prefs = new gadgets.Prefs();
 
