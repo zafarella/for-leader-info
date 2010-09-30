@@ -51,11 +51,13 @@ user-select: none;
 var prefs = new gadgets.Prefs();
 
 function GetMyText() {
+if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
 document.getElementById('leader').innerHTML=r[Math.floor(Math.random()*(r[0]-1))+1];
 menu.style.display='none';
 gadgets.window.adjustHeight();
 }
 
+gadgets.util.registerOnLoadHandler(GetMyText);
 document.write('<style type="text/css">.innerbox, b { background-color: ' + prefs.getString("bg") + '; }</style>');
 
 function showMenu() { if (loading.style.display == 'none') menu.style.display='block'; };
