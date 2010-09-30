@@ -3,9 +3,11 @@
   <ModulePrefs title="test" />
   <Content type="html">
     <![CDATA[
-hello 
+
+kkk 
 <script type="text/javascript">
-document.write(gadgets.io.getProxyUrl(http://for-leader.info/dbig.php));
+//var ar = gadgets.io.getProxyUrl("http://for-leader.info/dbig.php");
+document.write(gadgets.io.getProxyUrl("http://for-leader.info/dbig.php"));
 </script>
 
 world nnn
