@@ -59,7 +59,7 @@ r[4]='<img src=\"http://for-leader.info/img/001.jpg\" border=0>';
 var prefs = new gadgets.Prefs();
 
 function GetMyText() {
-if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
+//if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
 document.getElementById('leader').innerHTML=r[Math.floor(Math.random()*(r[0]-1))+1];
 menu.style.display='none';
 gadgets.window.adjustHeight();
