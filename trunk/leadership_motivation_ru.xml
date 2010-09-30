@@ -21,7 +21,6 @@ thumbnail="http://for-leader-info.googlecode.com/svn/trunk/leadership_motivation
 <UserPref datatype="string" name="bg" display_name="Цвет фона" default_value="ffcc00" />
 <Content type="html">
 <![CDATA[ 
-<meta HTTP-EQUIV="Pragma" CONTENT="no-cache" /><meta HTTP-EQUIV="Expires" CONTENT="Mon, 22 Aug 1978 23:59:59 GMT" />
 <style type="text/css">
 a:link, a:visited { color: 444444; text-decoration: none; }
 .innerbox {padding:0em;}
@@ -47,7 +46,8 @@ user-select: none;
 .unselectable::selection { color: inherit }
 </style>
 
-<script type="text/javascript" src="db.js"></script><script type="text/javascript">
+<script type="text/javascript" src="db.js"></script>
+<script type="text/javascript">
 var prefs = new gadgets.Prefs();
 
 function GetMyText() {
@@ -57,7 +57,6 @@ menu.style.display='none';
 gadgets.window.adjustHeight();
 }
 
-gadgets.util.registerOnLoadHandler(GetMyText);
 document.write('<style type="text/css">.innerbox, b { background-color: ' + prefs.getString("bg") + '; }</style>');
 
 function showMenu() { if (loading.style.display == 'none') menu.style.display='block'; };
@@ -69,6 +68,7 @@ document.write('<div onmouseover="showMenu();" onmouseout="hideMenu();" style="p
 
 document.write('<div id="loading" style="position: absolute; z-index: 3; top: 0px; right: 0px; display: none; color: ' + prefs.getString("bg") + '; background-color: 333333; padding: 2px; font-size: x-small; font-weight: bold; opacity: 0.33; filter: alpha(opacity=33);" class="unselectable" unselectable="on">Загрузка...</div>');
 
+gadgets.util.registerOnLoadHandler(GetMyText);
 setTimeout("GetMyText();",36000000);
 </script>
 
