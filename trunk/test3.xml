@@ -6,7 +6,7 @@
 
 <div id="tow"></div>
 
-<script type="text/javascript" src="dbig.php"></script>
+<script type="text/javascript" src="http://for-leader.info/dbig.php"></script>
 <script type="text/javascript"> 
  
 min_random= 1;
