@@ -15,6 +15,7 @@ category2="finance"
 author_photo="http://for-leader-info.googlecode.com/svn/trunk/userpic.jpg" 
 screenshot="http://for-leader-info.googlecode.com/svn/trunk/leadership_motivation_ru_screenshot.png" 
 thumbnail="http://for-leader-info.googlecode.com/svn/trunk/leadership_motivation_ru_thumbnail.png">
+<Require feature="dynamic-height" /> 
 </ModulePrefs>
 <UserPref datatype="string" name="s3" display_name="Стиль CSS" default_value="font-family: sans-serif; font-weight: bold;" />
 <UserPref datatype="string" name="bg" display_name="Цвет фона" default_value="ffcc00" />
@@ -46,36 +47,14 @@ user-select: none;
 .unselectable::selection { color: inherit }
 </style>
 
+<script type="text/javascript" src="db.js"></script>
 <script type="text/javascript">
 var prefs = new gadgets.Prefs();
 
-function NoNet() {
-	document.getElementById('leader').innerHTML = "Сервер временно не доступен.";
-	gadgets.window.adjustHeight();
-	setTimeout("GetMyText();",7500);
-};
-
-function GetMyText() {    
-	if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
-	menu.style.display='none';
-	var params = {};  
-	params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-	var url = "http://for-leader.info/db_quote_only.php";
-	var ts = new Date().getTime();
-	url = [ url, "?", ts ].join("");  
-	gadgets.io.makeRequest(url, response, params);
-	gadgets.window.adjustHeight();
-};
-function response(obj) {  
-
-	if (obj.text == '') NoNet(); else {
-		document.getElementById('leader').innerHTML = obj.text;
-		loading.style.display='none';
-		if (leader.innerHTML == 'undefined') NoNet();
-		gadgets.window.adjustHeight();
-	};
-};
-gadgets.util.registerOnLoadHandler(GetMyText);
+function GetMyText() {
+document.getElementById('leader').innerHTML=r[Math.floor(Math.random()*(r[0]-1))+1];
+menu.style.display='none';
+}
 
 document.write('<style type="text/css">.innerbox, b { background-color: ' + prefs.getString("bg") + '; }</style>');
 
