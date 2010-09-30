@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="test" />
+  <Content type="html">
+    <![CDATA[
+
+<div id="tow"></div>
+
+<script type="text/javascript" src="dbig.php"></script>
+<script type="text/javascript"> 
+ 
+min_random= 1;
+max_random= r[0]-1;
+
+function browse(){
+
+  document.getElementById("tow").innerHTML = "";
+  document.getElementById("tow").appendChild(r[Math.floor(Math.random()*(max_random+1-min_random))+min_random]);
+
+</script>
+
+  <br />
+  <div>
+    <input type=submit value="Next ->" onClick="browse()">
+  </div>
+
+    ]]>
+  </Content>
+</Module>
