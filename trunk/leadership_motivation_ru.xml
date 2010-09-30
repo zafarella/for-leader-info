@@ -59,7 +59,6 @@ r[4]='<img src=\"http://for-leader.info/img/001.jpg\" border=0>';
 var prefs = new gadgets.Prefs();
 
 function GetMyText() {
-//if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
 document.getElementById('leader').innerHTML=r[Math.floor(Math.random()*(r[0]-1))+1];
 menu.style.display='none';
 gadgets.window.adjustHeight();
@@ -67,14 +66,12 @@ gadgets.window.adjustHeight();
 
 document.write('<style type="text/css">.innerbox, b { background-color: ' + prefs.getString("bg") + '; }</style>');
 
-function showMenu() { if (loading.style.display == 'none') menu.style.display='block'; };
-function hideMenu() { if (loading.style.display == 'none') menu.style.display='none';  };
+function showMenu() { menu.style.display='block'; };
+function hideMenu() { menu.style.display='none';  };
 
-document.write('<div id="outbox" onmouseover="showMenu();" onmouseout="hideMenu();" style="position: z-index: 1; outline-style: none;"><b class="r5"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b><b class="r1"></b><div class="innerbox" id="leader" style="' + prefs.getString("s3") + '">Загрузка...</div><b class="r1"></b><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r5"></b></div>');
+document.write('<div id="outbox" onmouseover="showMenu();" onmouseout="hideMenu();" style="position: z-index: 1; outline-style: none;"><b class="r5"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b><b class="r1"></b><div class="innerbox" id="leader" style="' + prefs.getString("s3") + '"></div><b class="r1"></b><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r5"></b></div>');
 
 document.write('<div onmouseover="showMenu();" onmouseout="hideMenu();" style="position: absolute; z-index: 2; top: 0px; right: 0px; display: none; padding: 2px;" id="menu" class="unselectable" unselectable="on"><a href="#" onClick="GetMyText();" style="color: ' + prefs.getString("bg") + '; background-color: 333333; font-size: x-small; font-weight: bold; padding: 2px;" class="unselectable" unselectable="on">Еще фразу?</a></div>');
-
-document.write('<div id="loading" style="position: absolute; z-index: 3; top: 0px; right: 0px; display: none; color: ' + prefs.getString("bg") + '; background-color: 333333; padding: 2px; font-size: x-small; font-weight: bold; opacity: 0.33; filter: alpha(opacity=33);" class="unselectable" unselectable="on">Загрузка...</div>');
 
 GetMyText();
 setTimeout("GetMyText();",36000000);
