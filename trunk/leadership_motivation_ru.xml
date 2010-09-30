@@ -52,7 +52,8 @@ var prefs = new gadgets.Prefs();
 
 function GetMyText() {
 if (document.getElementById('leader').innerHTML != "Загрузка...") loading.style.display='block';
-document.getElementById('leader').innerHTML=r[Math.floor(Math.random()*(r[0]-1))+1];
+document.getElementById('leader').innerHTML=r[3];
+//r[Math.floor(Math.random()*(r[0]-1))+1];
 menu.style.display='none';
 gadgets.window.adjustHeight();
 }
