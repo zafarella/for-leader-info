@@ -20,7 +20,8 @@ thumbnail="http://for-leader-info.googlecode.com/svn/trunk/leadership_motivation
 <UserPref datatype="string" name="s3" display_name="Стиль CSS" default_value="font-family: sans-serif; font-weight: bold;" />
 <UserPref datatype="string" name="bg" display_name="Цвет фона" default_value="ffcc00" />
 <Content type="html">
-<![CDATA[ 
+<![CDATA[
+<!-- ALm6fM0oaNRIo+vx2V8pXs0rrvertjJltz4z1NTAQH7MS22gsSSeZqD2Xwko7/qbWH09kGFGH5tQNvijs31pCbZMkvBHlwo9gHS49znH00oy/a1SOfF9nNY2PnVz071itDZat6w2UQiKvd92iRDj7Z4oBgV4WbpkShwxV44Oh/YUUfqVQgGivV8= -->
 <style type="text/css">
 a:link, a:visited { color: 444444; text-decoration: none; }
 .innerbox {padding:0em;}
